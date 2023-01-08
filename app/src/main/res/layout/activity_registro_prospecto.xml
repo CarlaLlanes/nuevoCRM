@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroProspecto_Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="404dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/top_background4" />
+
+    <ImageButton
+        android:id="@+id/btn_atras"
+        android:layout_width="58dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00000000"
+        app:srcCompat="@drawable/ic_atras"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="353dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar1"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="@+id/toolbar1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo_menu">
+    </ImageView>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="410dp"
+        android:layout_height="52dp"
+        android:background="@android:color/transparent"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:text="Crear Prospecto"
+        android:textColor="@color/teal_700"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginStart="32dp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="240dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_goneMarginStart="32dp">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="358dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Nombre"
+                android:textColorHint="#6fa5ce"
+                android:textSize="18sp"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_nombre_Completo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:drawableStart="@drawable/name"
+                    android:drawablePadding="16dp"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#6fa5ce"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="358dp"
+                android:layout_height="57dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Correo Electrónico"
+                android:textColorHint="#6fa5ce"
+                android:textSize="18sp"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:drawableStart="@drawable/email"
+                    android:drawablePadding="16dp"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#6fa5ce">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="358dp"
+                android:layout_height="57dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Numero Celular"
+                android:textColorHint="#6fa5ce"
+                android:textSize="18sp"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_numero_Telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:drawableStart="@drawable/ic_cel"
+                    android:drawablePadding="16dp"
+                    android:inputType="number"
+                    android:textColorHint="#6fa5ce"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="358dp"
+                android:layout_height="57dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Posible Ganancia"
+                android:textColorHint="#6fa5ce"
+                android:textSize="18sp"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_posible_Ganancia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:drawableStart="@drawable/ic_money"
+                    android:drawablePadding="16dp"
+                    android:inputType="number"
+                    android:textColorHint="#6fa5ce"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_registro_prospecto"
+                android:layout_width="365dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="CREAR"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:icon="@drawable/ic_prospecto" />
+        </LinearLayout>
+</RelativeLayout>

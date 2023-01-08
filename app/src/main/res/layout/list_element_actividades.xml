@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/cv"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:animateLayoutChanges="true"
+app:cardCornerRadius="20dp"
+app:cardElevation="4dp"
+app:cardUseCompatPadding="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/icon_ImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            app:srcCompat="@drawable/today_black_24dp"></ImageView>
+
+        <TextView
+            android:id="@+id/nombre_Completo"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginBottom="2dp"
+            android:text="Tipo de Actividad"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/fecha_vencimiento"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="50dp"
+            android:text="Fecha"
+            android:textColor="@color/teal_200"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="45dp"
+            android:layout_toEndOf="@+id/icon_ImageView"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/icon_ImageView"
+                android:layout_toRightOf="@+id/icon_ImageView"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/hora_Inicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inicio"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/duracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Duración"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/descripcion_Actividad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descipcion"
+                    android:textSize="18dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/icon_ImageView"
+                android:layout_toRightOf="@+id/icon_ImageView"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/hora_Termino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Termino"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/recordatorios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recordatorio"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/medio_Contacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medio"
+                    android:textSize="18dp"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

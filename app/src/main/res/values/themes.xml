@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Crm" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#70A5CF</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_launch</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowContentTransitions">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Theme.MaterialComponents.DayNight">
+        <item name="windowNoTitle">false</item>
+        <item name="colorPrimary">#70A5CF</item>
+        <item name="windowActionBar">true</item>
+    </style>
+
+    <style name="Theme.Crm.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Crm.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Crm.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
